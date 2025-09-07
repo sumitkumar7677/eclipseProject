@@ -1,5 +1,7 @@
 package com.springcore.springcore;
 
+import java.util.EmptyStackException;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 /**
@@ -20,7 +22,6 @@ public class App
          ApplicationContext context3 = new ClassPathXmlApplicationContext("config.xml");
          Student student3 =(Student) context.getBean("student3");
          System.out.println(student3);
-         
         	 
     }
 }
