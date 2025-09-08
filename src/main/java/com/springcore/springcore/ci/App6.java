@@ -9,6 +9,7 @@ public class App6 {
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/springcore/ci/CiConfig.xml");
 		ConInjection a6= (ConInjection) context.getBean("a");
 		System.out.println(a6);
+		
 
 	}
 

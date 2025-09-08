@@ -9,10 +9,16 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
            
-       <bean class="com.springcore.springcore.ci.ConInjection" name = "a">
-       		<constructor-arg value = "234" type ="int"></constructor-arg>
-       		<constructor-arg value = "Sumit"></constructor-arg>
-       </bean>
+           
+        <bean id="a" class="com.springcore.springcore.ci.ConInjection">
+    <constructor-arg value="234"/>
+    <constructor-arg value="Sumit"/>
+    <constructor-arg>
+        <bean class="com.springcore.springcore.ci.Certi">
+            <constructor-arg value="Java"/>
+        </bean>
+    </constructor-arg>
+</bean>
        
        
 </beans>

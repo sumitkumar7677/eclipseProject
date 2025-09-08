@@ -1,20 +1,18 @@
 package com.springcore.springcore.ci;
 
 public class ConInjection {
-	private int id;
-	private String sName;
-	
-	public ConInjection(int id, String sName) {
-		this.id = id;
-		this.sName = sName;
-		
-	}
-	
-	@Override
-	
-	public String toString() {
-		return this.id +":" + this.sName;
-	}
-	
+    private int id;
+    private String name;
+    private Certi certi;
 
+    public ConInjection(int id, String name, Certi certi) {
+        this.id = id;
+        this.name = name;
+        this.certi = certi;
+    }
+
+    @Override
+    public String toString() {
+        return id + ":" + name + ":" + certi;
+    }
 }
