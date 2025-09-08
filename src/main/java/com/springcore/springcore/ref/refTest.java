@@ -10,6 +10,7 @@ public class refTest {
 		App4 app4 = (App4) context.getBean("App4ref");
 		System.out.println(app4.getA());
 		System.out.println(app4.getB().getC());
+	    System.out.println(app4);
 	}
 
 }
