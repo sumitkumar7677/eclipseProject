@@ -13,6 +13,6 @@ public class ConInjection {
 
     @Override
     public String toString() {
-        return id + ":" + name + "  : " + certi;
+        return id + ":" + name + ":" + certi;
     }
 }
