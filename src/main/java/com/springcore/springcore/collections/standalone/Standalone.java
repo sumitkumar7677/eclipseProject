@@ -12,6 +12,9 @@ public class Standalone {
 		System.out.println(alone);
 		System.out.println(alone.getName().getClass());
 		System.out.println(alone.getSection().getClass());
+		System.out.println(alone.getCourseFeeMap());
+		System.out.println(alone.getCourseFeeMap().getClass().getName());
+		
 		
 	
 	}
