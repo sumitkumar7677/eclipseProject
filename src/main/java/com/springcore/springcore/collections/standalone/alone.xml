@@ -29,7 +29,7 @@
            		
            	</util:list>
            
-           <util:map map-class ="java.util.HashMap" id = "CourseFee">
+           <util:map map-class ="java.util.TreeMap" id = "CourseFee">
            		<entry key = "Java" value = "90000"></entry> 
            		<entry key = "C++" value = "80000"></entry> 
            		<entry key = "Selenium" value = "90000000"></entry> 	
