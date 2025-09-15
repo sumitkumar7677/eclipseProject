@@ -8,8 +8,14 @@ public class Test {
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/springcore/steriotype/sterioConfig.xml");
 		Student student =context.getBean("student",Student.class);
 		System.out.println(student);
-		System.out.println(student.getCity().getClass());
+		
+		System.out.println(student.getCity());
 		System.out.println(student.getStudentName().getClass());
+		Student student2 = context.getBean("student",Student.class);
+		System.out.println(student.hashCode());
+		System.out.println(student2.hashCode());
 	}
+	
+	
 
 }
