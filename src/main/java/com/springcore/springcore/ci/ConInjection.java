@@ -1,5 +1,8 @@
 package com.springcore.springcore.ci;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 public class ConInjection {
     private int id;
     private String name;
@@ -15,4 +18,5 @@ public class ConInjection {
     public String toString() {
         return id + ":    " + name + "   : " + certi;
     }
+ 
 }
