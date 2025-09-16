@@ -10,8 +10,18 @@ public class Spel {
 	@Value("#{3+93}")
 	private int x;
 	
-	@Value("#{T(java.lang.Math).sqrt(23)}")
+	
+	//Invoking static method and Variable
+	
+	@Value("#{T(java.lang.Math).sqrt(16)}")
 	private double z;
+	
+	//Creating Object
+	
+	@Value("#{ new java.lang.String('Sumit Kumar') }")
+	private String s;
+	
+	
 	
 	public int getY() {
 		return y;
@@ -33,8 +43,9 @@ public class Spel {
 	}
 	@Override
 	public String toString() {
-		return "Spel [y=" + y + ", x=" + x + ", z=" + z + "]";
+		return "Spel [y=" + y + ", x=" + x + ", z=" + z + ", s=" + s + "]";
 	}
+	
 	
 	
 }
