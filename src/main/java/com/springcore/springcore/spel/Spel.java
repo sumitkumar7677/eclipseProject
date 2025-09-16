@@ -9,6 +9,10 @@ public class Spel {
 	private int y;
 	@Value("#{3+93}")
 	private int x;
+	
+	@Value("#{T(java.lang.Math).sqrt(23)}")
+	private double z;
+	
 	public int getY() {
 		return y;
 	}
@@ -21,9 +25,16 @@ public class Spel {
 	public void setX(int x) {
 		this.x = x;
 	}
+	public double getZ() {
+		return z;
+	}
+	public void setZ(double z) {
+		this.z = z;
+	}
 	@Override
 	public String toString() {
-		return "Spel [y=" + y + ", x=" + x + "]";
+		return "Spel [y=" + y + ", x=" + x + ", z=" + z + "]";
 	}
+	
 	
 }
